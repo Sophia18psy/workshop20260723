@@ -82,6 +82,7 @@ html, body {
 .tag-coral { background:#d85a30; }
 .tag-teal { background:#1d9e75; }
 .tag-purple { background:#7f77dd; }
+.section-tag svg { flex-shrink:0; }
 
 /* HIGHLIGHTS */
 .highlights { margin-bottom:11mm; }
@@ -95,7 +96,7 @@ html, body {
   background:#fff;
   border:3px solid #2c2c2a;
   border-radius:20px;
-  padding:22px 16px 18px;
+  padding:22px 11px 18px;
   text-align:center;
   box-shadow:5px 6px 0 #2c2c2a;
 }
@@ -114,7 +115,7 @@ html, body {
 .badge-amber { background:#fac775; }
 .badge-green { background:#c0dd97; }
 .h-card .label { font-size:23px; font-weight:900; color:#2c2c2a; margin-bottom:8px; }
-.h-card .desc { font-size:16.5px; font-weight:500; color:#5f5e5a; line-height:1.55; }
+.h-card .desc { font-size:15.5px; font-weight:500; color:#5f5e5a; line-height:1.55; }
 
 .summary-strip {
   background:#2c2c2a;
@@ -149,12 +150,11 @@ html, body {
 .avatar {
   width:62px; height:62px; flex-shrink:0;
   border-radius:50%;
-  background:#f0997b;
+  overflow:hidden;
   border:3px solid #2c2c2a;
-  color:#4a1b0c;
-  font-weight:900; font-size:23px;
   display:flex; align-items:center; justify-content:center;
 }
+.avatar svg { width:100%; height:100%; display:block; }
 .speaker-name { font-size:23px; font-weight:900; color:#2c2c2a; margin-bottom:4px; }
 .speaker-role { font-size:17px; font-weight:500; color:#5f5e5a; line-height:1.55; }
 .speaker-desc {
@@ -259,7 +259,7 @@ html, body {
   <svg class="confetti" style="bottom:300px; left:16px;" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="#afa9ec" stroke="#2c2c2a" stroke-width="2.4"/></svg>
 
   <div class="hero">
-    <span class="eyebrow">✨ 教師研習工作坊</span>
+    <span class="eyebrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#993556" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:4px;"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>教師研習工作坊</span>
     <div class="title">
       <span class="hl1">AI 應用<span class="title-deco"></span></span>於課程設計、<br>
       <span class="hl2">成效評量</span>與<span class="hl3">資訊視覺化</span>
@@ -267,22 +267,22 @@ html, body {
   </div>
 
   <div class="highlights">
-    <div class="section-tag tag-blue">🚀 活動亮點</div>
+    <div class="section-tag tag-blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 19 2c0 2.5-.5 6.5-4 9a22.75 22.75 0 0 1-3 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>活動亮點</div>
     <div class="highlight-grid">
       <div class="h-card">
-        <div class="badge badge-pink">💡</div>
+        <div class="badge badge-pink"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#712b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2.05V17h6v-.25c0-.85.4-1.55 1-2.05A7 7 0 0 0 12 2z"/></svg></div>
         <div class="label">靈感爆發</div>
         <div class="desc">運用 AI 快速建構創新的<br>課程大綱與教學單元</div>
       </div>
       <div class="h-card">
-        <div class="badge badge-amber">🎯</div>
+        <div class="badge badge-amber"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#633806" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
         <div class="label">精準評量</div>
-        <div class="desc">設計高效、多元且客觀的<br>學習成效評估工具</div>
+        <div class="desc">設計高效、多元且客觀<br>的學習成效評估工具</div>
       </div>
       <div class="h-card">
-        <div class="badge badge-green">📊</div>
+        <div class="badge badge-green"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#27500a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><rect x="5" y="13" width="3.5" height="8"/><rect x="10.25" y="8" width="3.5" height="13"/><rect x="15.5" y="4" width="3.5" height="17"/></svg></div>
         <div class="label">視覺吸睛</div>
-        <div class="desc">精準將繁雜數據與教學內容<br>轉化為直觀的圖表視覺</div>
+        <div class="desc">精準將繁雜數據與教學<br>內容轉化為直觀的圖表視覺</div>
       </div>
     </div>
     <div class="summary-strip">
@@ -292,9 +292,43 @@ html, body {
 
   <div class="two-col">
     <div class="bubble-card speaker-card">
-      <div class="section-tag tag-coral" style="font-size:22px; padding:8px 22px;">🎤 講師陣容</div>
+      <div class="section-tag tag-coral" style="font-size:22px; padding:8px 22px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2a3 3 0 0 1 3 3v6a3 3 0 1 1-6 0V5a3 3 0 0 1 3-3z" transform="translate(3 0)"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v4"/><path d="M9 22h6"/></svg>講師陣容</div>
       <div class="speaker-row">
-        <div class="avatar">洪</div>
+        <div class="avatar">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="32" fill="#ffffff"/>
+            <path d="M9 64c0-11.5 10-18 23-18s23 6.5 23 18H9z" fill="#ffffff"/>
+            <path d="M20.5 48.5l11.5 8.5 11.5-8.5v-6.5h-23v6.5z" fill="#fbfbfb" stroke="#e2e2e2" stroke-width="0.6"/>
+            <rect x="24.5" y="37" width="15" height="11" fill="#ffe0bd"/>
+            <circle cx="14.5" cy="34.5" r="5" fill="#ffe0bd"/>
+            <circle cx="49.5" cy="34.5" r="5" fill="#ffe0bd"/>
+            <ellipse cx="32" cy="31" rx="18" ry="18.5" fill="#ffe0bd"/>
+            <ellipse cx="19" cy="37.5" rx="4.2" ry="2.8" fill="#ff9e8a" opacity="0.55"/>
+            <ellipse cx="45" cy="37.5" rx="4.2" ry="2.8" fill="#ff9e8a" opacity="0.55"/>
+            <path d="M9 30.5c-.6-15.5 9.3-27.5 23-27.5s23.6 12 23 27.5c-.3-3-1.9-5-3.9-5.3.6-8.2-6.2-15.4-19.1-15.4S13.9 17 14.5 25.2c-2 .3-3.6 2.3-3.9 5.3z" fill="#2b2b29"/>
+            <circle cx="12.5" cy="17.5" r="6" fill="#2b2b29"/>
+            <circle cx="19" cy="8.5" r="6.8" fill="#2b2b29"/>
+            <circle cx="28" cy="4.2" r="7" fill="#2b2b29"/>
+            <circle cx="37" cy="4.2" r="7" fill="#2b2b29"/>
+            <circle cx="46" cy="8.5" r="6.8" fill="#2b2b29"/>
+            <circle cx="52.5" cy="17.5" r="6" fill="#2b2b29"/>
+            <path d="M9 27c-.9 6.8.4 12.5 3.2 17.2-3.2-2.6-5.6-8.3-4.8-15.4.4-1 1-1.6 1.6-1.8z" fill="#2b2b29"/>
+            <path d="M55 27c.9 6.8-.4 12.5-3.2 17.2 3.2-2.6 5.6-8.3 4.8-15.4-.4-1-1-1.6-1.6-1.8z" fill="#2b2b29"/>
+            <ellipse cx="22" cy="9" rx="3.6" ry="2.3" fill="#46453f" opacity="0.75" transform="rotate(-18 22 9)"/>
+            <path d="M20 27.5c1.6-1.1 4-1.1 5.6.1" stroke="#2b2b29" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M38.4 27.6c1.6-1.2 4-1.2 5.6 0" stroke="#2b2b29" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <circle cx="24" cy="33.5" r="7.6" fill="none" stroke="#2b2b29" stroke-width="2.2"/>
+            <circle cx="40" cy="33.5" r="7.6" fill="none" stroke="#2b2b29" stroke-width="2.2"/>
+            <path d="M31.6 32.6h.8" stroke="#2b2b29" stroke-width="2.2"/>
+            <path d="M16.4 32l-3.4-1" stroke="#2b2b29" stroke-width="2.2"/>
+            <path d="M47.6 32l3.4-1" stroke="#2b2b29" stroke-width="2.2"/>
+            <circle cx="24" cy="34" r="2.7" fill="#2b2b29"/>
+            <circle cx="40" cy="34" r="2.7" fill="#2b2b29"/>
+            <circle cx="23" cy="32.8" r="0.85" fill="#ffffff"/>
+            <circle cx="39" cy="32.8" r="0.85" fill="#ffffff"/>
+            <path d="M28.5 43.5c1.6 1.7 5.4 1.7 7 0" stroke="#a85c3a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
         <div>
           <div class="speaker-name">特邀 洪兆祥 教授</div>
           <div class="speaker-role">現任：臺北市立大學<br>心理與諮商學系 教授</div>
@@ -306,24 +340,24 @@ html, body {
     </div>
 
     <div class="bubble-card info-card">
-      <div class="section-tag tag-purple" style="font-size:22px; padding:8px 22px;">📋 活動資訊</div>
+      <div class="section-tag tag-purple" style="font-size:22px; padding:8px 22px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M9 11h6"/><path d="M9 15h6"/><path d="M9 19h3"/></svg>活動資訊</div>
       <div class="info-pill">
-        <div class="ic">📅</div>
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3c3489" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M3 10h18"/></svg></div>
         <div class="txt">2026年7月23日<span class="sub">星期四</span></div>
       </div>
       <div class="info-pill">
-        <div class="ic">⏰</div>
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3c3489" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
         <div class="txt">10:00 - 15:00</div>
       </div>
       <div class="info-pill">
-        <div class="ic">📍</div>
-        <div class="txt">臺北市立大學博愛校區<span class="sub">公誠樓3樓 304會議室</span></div>
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3c3489" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div class="txt">臺北市立大學<br>博愛校區<span class="sub">公誠樓3樓 304會議室</span></div>
       </div>
     </div>
   </div>
 
   <div class="schedule">
-    <div class="section-tag tag-teal">🗓️ 活動流程表</div>
+    <div class="section-tag tag-teal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M3 10h18"/><path d="M8 14h2"/><path d="M14 14h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>活動流程表</div>
     <div class="timeline">
       <div class="t-row">
         <div class="t-time num">10:00</div>
